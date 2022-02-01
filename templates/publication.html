@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+
+{%block title%}publication{%endblock%}
+
+{%block body%}
+<div class="container mt-5">
+    <h1>Data base print</h1>
+    {%if public|length > 0%}
+      {%for i in public%}
+        <div class="alert alert-info">
+            <h2>{{i.name}}</h2>
+            <p>{{i.id}}</p>
+            <p>{{i.interest}}</p>
+            <p><b>{{i.date.date()}}</b></p>
+            <a href="person/{{i.id}}" class ="btn btn-warning">Подробнее</a>
+        </div>
+        {%endfor%}
+    {% else %}
+    <p>Здесь пока ничего нет :-(</p>
+    {% endif %}
+</div>
+
+{%endblock%}

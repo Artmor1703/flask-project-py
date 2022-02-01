@@ -1,0 +1,10 @@
+{%extends 'base.html'%}
+
+{%block title%}{{public.name}}{%endblock%}
+
+{%block body%}
+<h1>{{public.name}}</h1>
+<p>{{public.interest}}</a></p>
+<a href="/person/{{public.id}}\del" class ="btn btn-danger">Удалить</a>
+<a href="/person/{{public.id}}\red" class ="btn btn-success">Редактировать</a>
+{%endblock%}
