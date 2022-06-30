@@ -12,11 +12,11 @@
             <p>{{i.id}}</p>
             <p>{{i.interest}}</p>
             <p><b>{{i.date.date()}}</b></p>
-            <a href="person/{{i.id}}" class ="btn btn-warning">Подробнее</a>
+            <a href="person/{{i.id}}" class ="btn btn-warning">Detailed</a>
         </div>
         {%endfor%}
     {% else %}
-    <p>Здесь пока ничего нет :-(</p>
+    <p>There's nothing here yet :-(</p>
     {% endif %}
 </div>
 
